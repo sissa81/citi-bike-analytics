@@ -23,7 +23,7 @@ My tableau customer dashboard can be found [here](https://public.tableau.com/app
 The customer base is largely male, with males accounting for over 70% of trips in 2018 and 2019. There was a 10% decrease in 2020, however, there was a 10% increase in unknown by about the same. Over the past three years there has been a total of a 4% increase of female customers. There was a larger increase in 2020, and releated to the above I wonder if females found it safer with COVID shutdowns and less vehicles on the road. This metric is not something that is currently being tracked, which is unforunate as I think it is a metric that should be looked at.
 
 My tableau gender dashboard can be found [here](https://public.tableau.com/app/profile/charissa.hoxie/viz/CustomerTypeByGender/GenderAnalysis).
-![Gender Analysis](Images/Gender_Analysis.png)
+![Gender Analysis](Images/Gender_Analysis_New.png)
 
 ### Popular Locations
 
