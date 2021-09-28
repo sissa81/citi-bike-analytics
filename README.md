@@ -1,111 +1,33 @@
 # Citi Bike Analytics
 
-### Before You Begin
-
-* This assignment will be saved to your Tableau Public account rather than GitHub. 
-
-* If you haven't already, be sure to create a Tableau Public account [here](https://public.tableau.com/s/).
-
-* The free tier of Tableau only lets you save to their public server. This means that each time you save your file it will be uploaded to your Tableau Public profile. 
-
-* You are able to load and continue working on the same workbook.
-
-* When you are finished with your assignment, you will turn in the URL to your Tableau Public workbook along with any additional files used for your analysis. 
-
 ## Background
 
 ![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
 
-Congratulations on your new job! As the new lead analyst for the [New York Citi Bike](https://en.wikipedia.org/wiki/Citi_Bike) Program, you are now responsible for overseeing the largest bike sharing program in the United States. In your new role, you will be expected to generate regular reports for city officials looking to publicize and improve the city program.
+Looking at data from January 2018 through December 2020, I looked at the types of customers, the gender and age of customers, and popular stations for starting and ending trips. My tableau story can be found ![here](https://public.tableau.com/app/profile/charissa.hoxie/viz/CitiBikeStory_16328049582700/Story1) 
 
-Since 2013, the Citi Bike Program has implemented a robust infrastructure for collecting data on the program's utilization. Through the team's efforts, each month bike data is collected, organized, and made public on the [Citi Bike Data](https://www.citibikenyc.com/system-data) webpage.
+### Customer Types
 
-However, while the data has been regularly updated, the team has yet to implement a dashboard or sophisticated reporting process. City officials have a number of questions on the program, so your first task on the job is to build a set of data reports to provide the answers.
+There are two categories of customers, casual and subscribers. There are far more subscribers than there are casual customers, sometimes almost 10 times as much. Starting in April of 2020, both types dropped lower than they had in previous years, probably due to COVID shutdowns. Although when the numbers started to climb in May 2020 the gap between casual customers and subscribers were not nearly as great. My thoughts on this are possibly that people may not have known how long things would stay shut down so they didn't want to become a subscriber. Also with shut downs there are far less cars on the roads and people may have been more comfortable riding bikes. 
 
-## Task
+While the subscribers greatly outnumber the casual customers, the averaage trip duration for casual customers is far greater than the average for subscribers. The average trip duration for subscribers is less than 10 minutes, while the average for casual customers hardly drops below 40 minutes. Again, there was a change starting in April 2020 and the average trip duration for subscribers climbed to 20 minutes at it's peak, staying above 10 minutes through 2020. 
 
-**Your task in this assignment is to aggregate the data found in the Citi Bike Trip History Logs and find two unexpected phenomena.** 
+Another observation is that the subscriber count decreases from December through February, most like due to the harsher weather conditions. Casual customers also drop during this time period, though not as dramatically.
 
-**Design 2-5 visualizations for each discovered phenomena (4-10 total). You may work with a timespan of your choosing. Optionally, you may merge multiple datasets from different periods.** 
+My tableau customer dashboard can be found ![here](https://public.tableau.com/app/profile/charissa.hoxie/viz/CustomerByTypeAnalysis/CustomerTypeAnalysis)
+![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
+ 
 
-**The following are some questions you may wish to tackle. Do not limit yourself to these questions; they are suggestions for a starting point. Be creative!**
+### Gender
 
-* How many trips have been recorded total during the chosen period?
+The customer base is largely male, with males accounting for over 70% of trips in 2018 and 2019. There was a 10% decrease in 2020, however, there was a 10% increase in unknown by about the same. Over the past three years there has been a total of a 4% increase of female customers. There was a larger increase in 2020, and releated to the above I wonder if females found it safer with COVID shutdowns and less vehicles on the road. This metric is not something that is currently being tracked, which is unforunate as I think it is a metric that should be looked at.
 
-* By what percentage has total ridership grown?
+My tableau gender dashboard can be found ![here](https://public.tableau.com/app/profile/charissa.hoxie/viz/GenderAnalysis_16327877832450/GenderAnalysis)
+![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
 
-* How has the proportion of short-term customers and annual subscribers changed?
+### Popular Locations
 
-* What are the peak hours in which bikes are used during summer months?
+The same stations are similarly busy whether the trips are started or ended. During the summer months the activity is more spreadout between the stations, and during the winter the busy stations really stand out. Starting in April 2020 there was a lot more activity in some of the otherwise less busy stations. I think that correlates to the other data from after COVID shutdowns.
 
-* What are the peak hours in which bikes are used during winter months?
-
-* Today, what are the top 10 stations in the city for starting a journey? (Based on data, why do you hypothesize these are the top locations?)
-
-* Today, what are the top 10 stations in the city for ending a journey? (Based on data, why?)
-
-* Today, what are the bottom 10 stations in the city for starting a journey? (Based on data, why?)
-
-* Today, what are the bottom 10 stations in the city for ending a journey (Based on data, why?)
-
-* Today, what is the gender breakdown of active participants (Male v. Female)?
-
-* How effective has gender outreach been in increasing female ridership over the timespan?
-
-* How does the average trip duration change by age?
-
-* What is the average distance in miles that a bike is ridden?
-
-* Which bikes (by ID) are most likely due for repair or inspection in the timespan?
-
-* How variable is the utilization by bike ID?
-
-**Next, as a chronic over-achiever:**
-
-* Use your visualizations (does not have to be all of them) to design a dashboard for each phenomena.
-* The dashboards should be accompanied with an analysis explaining why the phenomena may be occuring. 
-
-**City officials would also like to see one of the following visualizations:**
-
-* **Basic:** A static map that plots all bike stations with a visual indication of the most popular locations to start and end a journey with zip code data overlaid on top.
-
-* **Advanced:** A dynamic map that shows how each station's popularity changes over time (by month and year). Again, with zip code data overlaid on the map.
-
-* The map you choose should also be accompanied by a write-up unveiling any trends that were noticed during your analysis.
-
-**Finally, create your final presentation**
-
-* Create a Tableau story that brings together the visualizations, requested maps, and dashboards.
-* This is what will be presented to the officials, so be sure to make it professional, logical, and visually appealing. 
-
-## Considerations
-
-Remember, the people reading your analysis will **NOT** be data analysts. Your audience will be city officials, public administrators, and heads of New York City departments. Your data and analysis needs to be presented in a way that is focused, concise, easy-to-understand, and visually compelling. Your visualizations should be colorful enough to be included in press releases, and your analysis should be thoughtful enough for dictating programmatic changes. 
-
-## Submission 
-
-Your final submission should include:
-
-* A link to your Tableau Public workbook that includes: 
-  * 4-10 Total "Phenomenon" Visualizations 
-  * 2 Dashboards
-  * 1 City Official Map
-  * 1 Story 
-* A text or markdown file with your analysis on the phenomenons you uncovered from the data.
-
-## Sharing Your Work
-In order to share your work, we are asking that you will save your workbook as a .twbx file so that your TA's can grade them.
-
-To save your workbook as a .twbx file, you will just need to select "Save As..." from the "File" dropdown. Then, select the .twbx option.
-
-## Assessment
-
-Your final product will be assessed on the following metrics:
-
-* Analytic Rigor
-
-* Readability
-
-* Visual Attraction
-
-
+My tableau map dashboard can be found ![here](https://public.tableau.com/app/profile/charissa.hoxie/viz/PopularStartandStopLocations/PopularStartandStopLocations)
+![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
