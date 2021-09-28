@@ -29,5 +29,5 @@ My tableau gender dashboard can be found [here](https://public.tableau.com/app/p
 
 The same stations are similarly busy whether the trips are started or ended. During the summer months the activity is more spreadout between the stations, and during the winter the busy stations really stand out. Starting in April 2020 there was a lot more activity in some of the otherwise less busy stations. I think that correlates to the other data from after COVID shutdowns.
 
-My tableau map dashboard can be found ![here](https://public.tableau.com/app/profile/charissa.hoxie/viz/PopularStartandStopLocations/PopularStartandStopLocations)
+My tableau map dashboard can be found [here](https://public.tableau.com/app/profile/charissa.hoxie/viz/PopularStartandStopLocations/PopularStartandStopLocations).
 ![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
